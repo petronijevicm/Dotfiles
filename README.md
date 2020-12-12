@@ -1,1 +1,1 @@
-Dotfiles for software i use.
+Configuration files for software i use.
