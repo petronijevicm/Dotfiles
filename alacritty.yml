@@ -1,6 +1,6 @@
   background_opacity: 0.963
   startup_mode: Fullscreen
-  history: 100
+  history: 1000
   style: Beam
   program: /bin/fish
 
