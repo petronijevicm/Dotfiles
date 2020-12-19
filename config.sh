@@ -1,10 +1,10 @@
 #!/bin/bash
 cd ~
 sudo pacman -Syu
-sudo pacman -Sy coreutils entr git fish yay ansible neovim brave alacritty qemu virt-manager ghidra tmux htop
+sudo pacman -S coreutils entr pulseaudio git zsh yay ansible neovim brave qemu virt-manager ghidra tmux htop tlp 
 clear
 
-chsh -s /bin/fish
+chsh -s /bin/zsh
 
 cat /tmp/configuration/alacritty.yml > ~/.config/alacritty/alacritty.yml
 cat /tmp/configuration/config.fish > ~/.config/fish/config.fish
