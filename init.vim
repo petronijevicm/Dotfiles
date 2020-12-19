@@ -5,11 +5,15 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
+Plug 'altercation/vim-colors-solarized'
+
 
 call plug#end()
 
 syntax on
-colorscheme nord
+
+set background=light
+colorscheme solarized
 
 set number relativenumber
 set hidden
