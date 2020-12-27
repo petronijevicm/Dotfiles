@@ -11,10 +11,6 @@ HISTSIZE=100
 SAVEHIST=100
 HISTFILE=~/.cache/zsh/history
 
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc"
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
-[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc"
-
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
@@ -60,3 +56,4 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+source /etc/aliasrc
