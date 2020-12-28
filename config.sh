@@ -1,8 +1,8 @@
 #!/bin/bash
 cd ~
 sudo pacman -Syu
-sudo pacman -S coreutils entr pulseaudio git zsh yay ansible neovim brave qemu virt-manager ghidra tmux htop tlp alasrc
-clear
+sudo pacman -S coreutils entr git zsh yay ansible neovim brave qemu virt-manager ghidra tmux htop tlp
+yay aliasrc
 
 chsh -s /bin/zsh
 
