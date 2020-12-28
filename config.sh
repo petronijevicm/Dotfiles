@@ -11,6 +11,7 @@ git clone https://github.com/petronijevicm/Dotfiles /tmp/configuration
 cat /tmp/configuration/alacritty.yml > ~/.config/alacritty/alacritty.yml
 cat /tmp/configuration/.zshrc > ~/.zshrc
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
+cat /tmp/configuration/.aliasrc > ~/.aliasrc
 clear && echo Finished with confihuration
 
 git clone https://github.com/zdharma/fast-syntax-highlighting ~/Git
