@@ -5,6 +5,7 @@ sudo pacman -S coreutils entr git zsh yay ansible neovim brave qemu virt-manager
 yay aliasrc
 
 chsh -s /bin/zsh
+sudo tlp start
 
 cat /tmp/configuration/alacritty.yml > ~/.config/alacritty/alacritty.yml
 cat /tmp/configuration/.zshrc > ~/.zshrc
