@@ -14,3 +14,5 @@ clear && echo Finished with confihuration
 
 git clone https://github.com/zdharma/fast-syntax-highlighting ~/Git
 echo "source ~/Git/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" >> ~/.zshrc
+
+echo "exec dwm" >> $HOME/.xinitrc
