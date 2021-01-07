@@ -27,9 +27,6 @@ bindkey -v '^?' backward-delete-char
 
 
 bindkey -s '^o' 'lf\n'
-
-bindkey -s '^a' 'ls -lah\n'
-
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
 ex ()
