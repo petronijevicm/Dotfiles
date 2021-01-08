@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ~
 sudo pacman -Syu
-sudo pacman -S coreutils entr git zsh yay ansible neovim brave qemu virt-manager calcurse tmux htop tlp zathura mpv youtube-dl youtube-viewer newsboat
+sudo pacman -S coreutils entr git zsh yay ansible neovim brave qemu virt-manager calcurse tmux htop tlp zathura mpv youtube-dl youtube-viewer newsboat sxiv foliate meld
 yay aliasrc
 
 chsh -s /bin/zsh
