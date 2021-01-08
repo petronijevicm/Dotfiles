@@ -8,9 +8,12 @@ chsh -s /bin/zsh
 sudo tlp start
 
 cat /tmp/configuration/alacritty.yml > ~/.config/alacritty/alacritty.yml
-cat /tmp/configuration/.zshrc > ~/.zshrc
+ln -s ~/.config/zsh/.zshrc ~/.zshrc
+cat /tmp/configuration/.zshrc > ~/.config/zsh/.zshrc
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
+ln -s ~/.config/zsh/.zshrc ~/.config/aliasrc/.aliasrc
 cat /tmp/configuration/.aliasrc > ~/.aliasrc
+cat /tmp/configuration/config >~/.config/newsboat
 clear && echo Finished with confihuration
 
 git clone https://github.com/zdharma/fast-syntax-highlighting ~/Git
