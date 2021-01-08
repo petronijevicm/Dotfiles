@@ -5,3 +5,4 @@ Configuration files for software i use.
 ```
   git clone https://github.com/petronijevicm/Dotfiles/ /tmp/configuration && sh config.sh
 ```
+*Arch Based distributions only*
