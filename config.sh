@@ -1,8 +1,8 @@
 #!/bin/bash
 cd $HOME
 sudo pacman -Syu
-#sudo pacman -S git zsh yay bspwm sxhkd brave calcurse newsboat tlp youtube-dl youtube-viewer
-#sudo pacman -S zathura sxiv mpv foliate neovim
+#sudo pacman -S git zsh yay xmonad xmobar xmonad-contrib sxhkd brave calcurse newsboat tlp youtube-dl youtube-viewer alacritty
+#sudo pacman -S zathura zathura-pdf-mupdf sxiv mpv foliate neovim onlyoffice-desktopedditors
 #sudo pacman -S qemu virt-manager tmux htop ansible meld entr tcc
 
 yay aliasrc
