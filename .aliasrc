@@ -14,9 +14,9 @@ alias cal="date +%n%n%n____________________________%T___________________________
 alias todo="calcurse"
 
 alias \
-p="cp -iv" \
-v="mv -iv" \
-m="rm -vI" \
+c="cp -iv" \
+m="mv -iv" \
+r="rm -vI" \
 kd="mkdir -pv" \
 t="youtube-dl --add-metadata -i" \
 ta="yt -x -f bestaudio/best" \
