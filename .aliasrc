@@ -12,3 +12,15 @@ alias l="ls -lah"
 alias rss="newsboat"
 alias cal="date +%n%n%n____________________________%T____________________________%n  && cal -3 && echo && echo"
 alias todo="calcurse"
+
+alias \
+p="cp -iv" \
+v="mv -iv" \
+m="rm -vI" \
+kd="mkdir -pv" \
+t="youtube-dl --add-metadata -i" \
+ta="yt -x -f bestaudio/best" \
+fmpeg="ffmpeg -hide_banner" \
+YT="youtube-viewer" \
+sdn="sudo shutdown -h now" \
+z="zathura"
