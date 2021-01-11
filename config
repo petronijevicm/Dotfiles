@@ -1,4 +1,4 @@
-browser "firefox %u"
+browser "brave %u"
 
 auto-reload yes
 max-items 100
