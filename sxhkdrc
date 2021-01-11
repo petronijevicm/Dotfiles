@@ -1,0 +1,6 @@
+shift + F1
+				xbacklight -dec 3
+shift + F2
+					xbacklight -inc 3
+mod4 + Return
+ 		rofi -show run		
