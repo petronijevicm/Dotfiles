@@ -1,6 +1,14 @@
 shift + F1
-				xbacklight -dec 3
+	xbacklight -dec 3
 shift + F2
-					xbacklight -inc 3
+	xbacklight -inc 3
+mod4 + d
+ 	dmenu_run		
 mod4 + Return
- 		rofi -show run		
+	st
+shift + F5
+	amixer -q sset Master 3%-
+shift + F6
+	amixer -q sset Master 3%+
+shift + F4
+	amixer -q sset Master toggle
