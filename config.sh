@@ -1,23 +1,31 @@
 #!/bin/bash
 cd $HOME
 sudo pacman -Syu
-#sudo pacman -S git zsh yay xmonad xmobar xmonad-contrib sxhkd brave calcurse newsboat tlp youtube-dl youtube-viewer alacritty
-#sudo pacman -S zathura zathura-pdf-mupdf sxiv mpv foliate neovim onlyoffice-desktopedditors
-#sudo pacman -S qemu virt-manager tmux htop ansible meld entr tcc
 
-yay aliasrc
+sudo apt insall fish git browser tlp tcc
 
-chsh -s /bin/zsh
+chsh -s /bin/fish
 sudo tlp start
 
-cat /tmp/configuration/alacritty.yml > ~/.config/alacritty/alacritty.yml
-ln -s ~/.config/zsh/.zshrc ~/.zshrc
-cat /tmp/configuration/.zshrc > ~/.config/zsh/.zshrc
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
-ln -s ~/.config/zsh/.zshrc ~/.config/aliasrc/.aliasrc
-cat /tmp/configuration/.aliasrc > ~/.aliasrc
-cat /tmp/configuration/config >~/.config/newsboat
-clear && echo Finished with confihuration
 
-git clone https://github.com/zdharma/fast-syntax-highlighting ~/Git
-echo "source ~/Git/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" >> ~/.config/zsh/.zshrc
+flatpak install flathub com.github.johnfactotum.Foliate -y --user
+flatpak install flathub com.github.tchx84.Flatseal -y --user
+flatpak install flathub com.microsoft.Teams -y --user
+flatpak install flathub com.obsproject.Studio -y --user
+flatpak install flathub com.transmissionbt.Transmission -y --user
+flatpak install flathub com.tutanota.Tutanota -y --user
+flatpak install flathub com.vscodium.codium -y --user
+flatpak install flathub fr.romainvigier.MetadataCleaner -y --user
+flatpak install flathub io.github.liberodark.OpenDrive -y --user
+flatpak install flathub org.blender.Blender -y --user
+flatpak install flathub org.glimpse_editor.Glimpse -y --user
+flatpak install flathub org.gnome.Totem -y --user
+flatpak install flathub org.gnome.meld -y --user
+flatpak install flathub org.onlyoffice.desktopeditors -y --user
+
+mkdir ~/Git && cd Git
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer
+sudo auto-cpufreq --install
+
