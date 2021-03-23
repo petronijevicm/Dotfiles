@@ -2,7 +2,8 @@
 cd $HOME
 sudo pacman -Syu
 
-sudo apt insall fish git browser tlp tcc
+sudo apt insall fish git browser tlp tcc ostree libappstream-glib appstream-glib
+
 
 chsh -s /bin/fish
 sudo tlp start
@@ -24,8 +25,12 @@ flatpak install flathub org.gnome.Totem -y --user
 flatpak install flathub org.gnome.meld -y --user
 flatpak install flathub org.onlyoffice.desktopeditors -y --user
 
+cd ~/Pictures
+git clone https://github.com/eallion/Big-Sur-Ubuntu.git
+
 mkdir ~/Git && cd Git
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+git clone https://github.com/refi64/pakitheme.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
 
