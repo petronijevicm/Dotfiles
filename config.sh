@@ -24,6 +24,7 @@ flatpak install flathub org.glimpse_editor.Glimpse -y --user
 flatpak install flathub org.gnome.Totem -y --user
 flatpak install flathub org.gnome.meld -y --user
 flatpak install flathub org.onlyoffice.desktopeditors -y --user
+flatpak install flathub com.axosoft.GitKraken -y --user
 
 cd ~/Pictures
 git clone https://github.com/eallion/Big-Sur-Ubuntu.git
