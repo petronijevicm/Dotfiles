@@ -29,14 +29,18 @@ flatpak install flathub org.onlyoffice.desktopeditors -y --user
 
 
 mkdir ~/Git && cd ~/Git
-git clone https://github.com/AdnanHodzic/auto-cpufreq.git
-git clone https://github.com/refi64/pakitheme.git
+
+
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
 cd WhiteSur-gtk-theme/ && ./install.sh -c dark -c light && ./tweaks.sh -f
 
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+cd ~/Git && git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 cd ~/Git/WhiteSur-icon-theme && ./install.sh
 
+cd ~/Git && git clone https://github.com/refi64/pakitheme.git
+cd pakitheme && chmod +x pakitheme && ./pakitheme install-system
+
+cd ~/Git && git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd ~/Git/auto-cpufreq/ && sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
 
