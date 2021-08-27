@@ -21,21 +21,17 @@ flatpak install flathub com.vscodium.codium -y --user
 flatpak install flathub fr.romainvigier.MetadataCleaner -y --user
 flatpak install flathub org.blender.Blender -y --user
 flatpak install flathub org.glimpse_editor.Glimpse -y --user
-flatpak install flathub org.gnome.Totem -y --user
-flatpak install flathub org.gnome.meld -y --user
-flatpak install flathub org.onlyoffice.desktopeditors -y --user
 flatpak install flathub com.viber.Viber -y --user
-flatpak install flathub org.onlyoffice.desktopeditors -y --user
+flatpak install flathub org.inkscape.Inkscape -y --user
+flatpak install flathub org.ardour.Ardour -y --user
+flatpak install flathub org.libreoffice.LibreOffice -y --user
 
+
+flatpak install flathub org.gimp.GIMP -y --user
+flatpak install org.gimp.GIMP.Plugin.Resynthesizer org.gimp.GIMP.Plugin.LiquidRescale org.gimp.GIMP.Plugin.Lensfun org.gimp.GIMP.Plugin.GMic org.gimp.GIMP.Plugin.Fourier org.gimp.GIMP.Plugin.FocusBlur org.gimp.GIMP.Plugin.BIMP
 
 mkdir ~/Git && cd ~/Git
 
-
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
-cd WhiteSur-gtk-theme/ && ./install.sh -c dark -c light && ./tweaks.sh -f
-
-cd ~/Git && git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
-cd ~/Git/WhiteSur-icon-theme && ./install.sh
 
 cd ~/Git && git clone https://github.com/refi64/pakitheme.git
 cd pakitheme && chmod +x pakitheme && ./pakitheme install-system
@@ -56,10 +52,5 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser
-
-cd ~/Git
-wget https://s3.amazonaws.com/winds-2.0-releases/releases/Winds-3.2.0.AppImage
-
-
 
 
