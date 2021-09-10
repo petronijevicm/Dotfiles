@@ -12,6 +12,10 @@ sudo apt upgrade
 
 sudo tlp start
 
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
 
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
