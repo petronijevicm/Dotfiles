@@ -2,7 +2,7 @@
 cd $HOME
 
 sudo apt update
-sudo apt insall zsh git browser tlp tcc ostree libappstream-glib appstream-glib sxiv mpv ranger  -y
+sudo apt insall zsh git browser tlp tcc ostree libappstream-glib appstream-glib sxiv mpv ranger alacritty  -y
 sudo apt upgrade
 
 sudo tlp start
