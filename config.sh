@@ -1,13 +1,8 @@
 #!/bin/bash
 cd $HOME
 
-#sudo dnf update -y
-#sudo dnf insall fish git browser tlp tcc ostree libappstream-glib appstream-glib -y
-#sudo dnf install poppler-cpp-devel openssl-devel libcurl-devel
-#sudo yum install libjpeg-turbo-devel
-
 sudo apt update
-sudo apt insall fish git browser tlp tcc ostree libappstream-glib appstream-glib -y
+sudo apt insall zsh git browser tlp tcc ostree libappstream-glib appstream-glib sxiv mpv ranger  -y
 sudo apt upgrade
 
 sudo tlp start
