@@ -2,7 +2,7 @@
 cd $HOME
 
 sudo apt update
-sudo apt insall zsh git browser tlp tcc ostree libappstream-glib appstream-glib sxiv mpv ranger alacritty flameshot -y
+sudo apt insall zsh git tlp tcc ostree libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty flameshot bspwm rofi neovim python3-pip flatpak -y
 sudo apt upgrade
 
 sudo tlp start
@@ -10,6 +10,7 @@ sudo tlp start
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+pip3 install git+https://github.com/wustho/epy
 
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
 
@@ -41,13 +42,9 @@ cd pakitheme && chmod +x pakitheme && ./pakitheme install-system
 cd ~/Git && git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd ~/Git/auto-cpufreq/ && sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
-
-
-#sudo dnf install dnf-plugins-core
-#sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-#sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-#sudo dnf install brave-browser
-
+cd /tmp/
+curl -LO https://github.com/weiameili/Pensela/releases/download/v1.2.3/pensela_1.2.3_amd64.deb
+sudo apt install /tmp/pensela_1.2.3_amd64.deb
 
 sudo apt install apt-transport-https curl
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
