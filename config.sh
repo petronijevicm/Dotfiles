@@ -18,7 +18,6 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
 
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
-flatpak install flathub com.github.tchx84.Flatseal -y --user
 flatpak install flathub com.microsoft.Teams -y --user
 flatpak install flathub com.obsproject.Studio -y --user
 flatpak install flathub com.transmissionbt.Transmission -y --user
@@ -26,11 +25,11 @@ flatpak install flathub com.tutanota.Tutanota -y --user
 flatpak install flathub com.vscodium.codium -y --user
 flatpak install flathub fr.romainvigier.MetadataCleaner -y --user
 flatpak install flathub org.blender.Blender -y --user
-flatpak install flathub org.glimpse_editor.Glimpse -y --user
 flatpak install flathub com.viber.Viber -y --user
 flatpak install flathub org.inkscape.Inkscape -y --user
 flatpak install flathub org.ardour.Ardour -y --user
-flatpak install flathub org.libreoffice.LibreOffice -y --user
+flatpak install flathub com.github.alainm23.planner
+flatpak install flathub org.onlyoffice.desktopeditors
 
 
 flatpak install flathub org.gimp.GIMP -y --user
