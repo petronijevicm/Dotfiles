@@ -30,6 +30,7 @@ flatpak install flathub org.inkscape.Inkscape -y --user
 flatpak install flathub org.ardour.Ardour -y --user
 flatpak install flathub com.github.alainm23.planner
 flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub re.sonny.Tangram
 
 
 flatpak install flathub org.gimp.GIMP -y --user
