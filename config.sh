@@ -11,7 +11,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 pip3 install git+https://github.com/wustho/epy
-python3 -m pip install --upgrade git+https://github.com/yt-dlp/yt-dlp.git@releas
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
+
 
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
 
