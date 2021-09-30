@@ -11,6 +11,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 pip3 install git+https://github.com/wustho/epy
+python3 -m pip install --upgrade git+https://github.com/yt-dlp/yt-dlp.git@releas
 
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
 
@@ -34,6 +35,8 @@ flatpak install flathub org.gimp.GIMP -y --user
 flatpak install org.gimp.GIMP.Plugin.Resynthesizer org.gimp.GIMP.Plugin.LiquidRescale org.gimp.GIMP.Plugin.Lensfun org.gimp.GIMP.Plugin.GMic org.gimp.GIMP.Plugin.Fourier org.gimp.GIMP.Plugin.FocusBlur org.gimp.GIMP.Plugin.BIMP
 
 mkdir ~/Git && cd ~/Git
+ curl -LO https://github.com/responsively-org/responsively-app/releases/download/v0.17.0/ResponsivelyApp-0.17.0.AppImage
+ chmod +x ResponsivelyApp-0.17.0.AppImage
 
 
 cd ~/Git && git clone https://github.com/refi64/pakitheme.git
