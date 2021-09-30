@@ -2,7 +2,7 @@
 cd $HOME
 
 sudo apt update
-sudo apt insall zsh git tlp tcc ostree libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty flameshot bspwm rofi neovim python3-pip flatpak -y
+sudo apt insall zsh git tlp tcc ostree libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm rofi neovim python3-pip flatpak -y
 sudo apt upgrade
 
 sudo tlp start
