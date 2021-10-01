@@ -2,9 +2,9 @@
 cd $HOME
 
 sudo apt update
-sudo apt insall zsh git tlp tcc ostree libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm rofi neovim python3-pip flatpak -y
+sudo apt insall zsh git tlp tcc ostree appstream-util libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm neovim python3-pip flatpak -y
 sudo apt upgrade
-
+sudo add-apt-repository ppa:agornostal/ulauncher && sudo apt update && sudo apt install ulauncher
 sudo tlp start
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
