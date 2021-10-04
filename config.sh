@@ -4,7 +4,7 @@ cd $HOME
 sudo apt update
 sudo apt insall zsh git tlp tcc ostree appstream-util libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm neovim python3-pip flatpak -y
 sudo apt upgrade
-mkdir $HOME/.config/alacritty && touch $HOME/.config/alacritty/alacritty.yml
+
 sudo tlp start
 
 
@@ -22,6 +22,9 @@ cat /tmp/configuration/config > $HOME/.config/newsboat/config
 
 cat /tmp/configuration/.zshrc > $HOME/.zshrc
 chsh /bin/zsh
+
+mkdir $HOME/.config/alacritty
+cat /tmp/configuration/alacritty.yml > $HOME/.comfig/alacritty/alacritty.yml
 
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
 flatpak install flathub com.microsoft.Teams -y --user
