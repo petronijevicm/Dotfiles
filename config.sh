@@ -18,7 +18,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 mkdir $HOME/.config/newsboat
-cat /tmp/configuration/config > $HOME/.config/newsboat/urls
+cat /tmp/configuration/config > $HOME/.config/newsboat/config
 
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
 flatpak install flathub com.microsoft.Teams -y --user
