@@ -7,15 +7,18 @@ sudo apt upgrade
 mkdir $HOME/.config/alacritty && touch $HOME/.config/alacritty/alacritty.yml
 sudo tlp start
 
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 pip3 install git+https://github.com/wustho/epy
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
 
-
+mkdir $HOME/.config/nvim/
 cat /tmp/configuration/init.vim > ~/.config/nvim/init.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+mkdir $HOME/.config/newsboat
+cat /tmp/configuration/config > $HOME/.config/newsboat/urls
 
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
 flatpak install flathub com.microsoft.Teams -y --user
