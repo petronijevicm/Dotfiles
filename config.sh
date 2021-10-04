@@ -4,7 +4,7 @@ cd $HOME
 sudo apt update
 sudo apt insall zsh git tlp tcc ostree appstream-util libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm neovim python3-pip flatpak -y
 sudo apt upgrade
-touch $HOME/.config/alacritty/alacritty.yml
+mkdir $HOME/.config/alacritty && touch $HOME/.config/alacritty/alacritty.yml
 sudo tlp start
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
