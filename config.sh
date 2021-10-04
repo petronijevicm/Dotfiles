@@ -20,6 +20,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir $HOME/.config/newsboat
 cat /tmp/configuration/config > $HOME/.config/newsboat/config
 
+cat /tmp/configuration/.zshrc > $HOME/.zshrc
+chsh /bin/zsh
+
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
 flatpak install flathub com.microsoft.Teams -y --user
 flatpak install flathub com.obsproject.Studio -y --user
