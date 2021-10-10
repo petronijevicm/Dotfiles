@@ -2,7 +2,8 @@
 cd $HOME
 
 sudo apt update
-sudo apt insall zsh git tlp tcc ostree appstream-util libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm neovim python3-pip flatpak -y
+sudo apt insall zsh git tlp tcc ostree appstream-util libappstream-glib appstream-glib sxiv sxhkd mpv nautilus alacritty newsboat flameshot bspwm neovim python3-pip flatpak linux-headers-`uname -r` gcc make v4l2loopback-dkms 
+ -y
 sudo apt upgrade
 
 sudo tlp start
