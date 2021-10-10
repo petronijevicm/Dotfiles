@@ -29,7 +29,6 @@ cat /tmp/configuration/alacritty.yml > $HOME/.comfig/alacritty/alacritty.yml
 
 flatpak install flathub com.github.johnfactotum.Foliate -y --user
 flatpak install flathub com.microsoft.Teams -y --user
-flatpak install flathub com.obsproject.Studio -y --user
 flatpak install flathub com.transmissionbt.Transmission -y --user
 flatpak install flathub com.tutanota.Tutanota -y --user
 flatpak install flathub com.vscodium.codium -y --user
@@ -67,4 +66,10 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser
 
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update && sudo apt install obs-studio
+
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
+sudo apt update && sudo apt install codium
 
